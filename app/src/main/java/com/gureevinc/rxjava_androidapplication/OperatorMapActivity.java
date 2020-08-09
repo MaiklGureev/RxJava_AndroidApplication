@@ -29,6 +29,7 @@ public class OperatorMapActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_operator_map);
         textView = findViewById(R.id.textViewStatus);
+        setTitle(getClass().getSimpleName());
 
         stringObserver = new Observer<Integer>() {
             String message;

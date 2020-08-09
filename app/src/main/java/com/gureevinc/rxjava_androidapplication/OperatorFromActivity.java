@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import io.reactivex.rxjava3.annotations.NonNull;
@@ -27,6 +28,7 @@ public class OperatorFromActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_operator_from);
+        setTitle(getClass().getSimpleName());
 
         textView = findViewById(R.id.textViewStatus);
         stringObserver = new Observer<String>() {
@@ -60,6 +62,8 @@ public class OperatorFromActivity extends AppCompatActivity {
 
 
     public void onClick(View view) {
+        String message = "Observable.fromArray: "+ Arrays.toString(strings);
+        textView.append("##" + message + "\n");
         Observable.fromArray(strings)
                 .subscribe(stringObserver);
     }

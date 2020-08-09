@@ -13,73 +13,91 @@ import io.reactivex.rxjava3.core.Observable;
 
 public class SimpleExampleActivity extends AppCompatActivity {
 
-    Observable<String> stringObservable;
-    Subscriber<String> stringSubscriber;
-    TextView textView;
+    private Observable<String> stringObservable;
+    private Subscriber<String> stringSubscriber;
+    private TextView textView;
+    private String value = "Hello from Observer!";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_simple_example);
+        setTitle(getClass().getSimpleName());
+
         textView = findViewById(R.id.textViewStatus);
     }
 
     public void onClick(View view) {
+        String message;
         switch (view.getId()) {
             case R.id.buttonCreateObserver: {
-                createObserver();
+                if (stringObservable == null) {
+                    createObserver(value);
+                    message = "buttonCreateObserver: create with value " + value;
+                    textView.append("## " + message + "\n");
+                }
                 break;
             }
             case R.id.buttonCreateSubscriber: {
-                createSubscriber();
+                if (stringSubscriber == null) {
+                    message = "buttonCreateSubscriber: create!";
+                    textView.append("## " + message + "\n");
+                    createSubscriber();
+                }
                 break;
             }
             case R.id.buttonSubscribe: {
-                doSubscribe();
+                if (stringSubscriber != null && stringObservable != null) {
+                    message = "buttonSubscribe: do subscribe!!";
+                    textView.append("## " + message + "\n");
+                    doSubscribe();
+                }
                 break;
             }
         }
     }
 
-    void createObserver() {
+    void createObserver(String value) {
         stringObservable = Observable.create(emitter -> {
             String message = "stringObservable: subscribe()";
             textView.append("## " + message + "\n");
-            emitter.onNext("Hello from Observer!");
+            emitter.onNext(value);
             emitter.onComplete();
         });
     }
 
     void createSubscriber() {
         stringSubscriber = new Subscriber<String>() {
+            String message;
+
             @Override
             public void onSubscribe(Subscription s) {
-                String message = "stringSubscriber: onSubscribe(). Message: " + s;
+                message = "stringSubscriber: onSubscribe(). Message: " + s;
                 textView.append("## " + message + "\n");
             }
 
             @Override
             public void onNext(String s) {
-                String message = "stringSubscriber: onNext(). Message: " + s;
+                message = "stringSubscriber: onNext(). Message: " + s;
                 textView.append("## " + message + "\n");
             }
 
             @Override
             public void onError(Throwable t) {
-                String message = "stringSubscriber: onError()";
+                message = "stringSubscriber: onError()";
                 textView.append("## " + message + "\n");
             }
 
             @Override
             public void onComplete() {
-                String message = "stringSubscriber: onComplete()";
+                message = "stringSubscriber: onComplete()";
                 textView.append("## " + message + "\n");
             }
         };
     }
 
     void doSubscribe() {
-        if (stringSubscriber != null && stringObservable != null) {
+
             stringObservable.subscribe(
                     s -> {
                         stringSubscriber.onNext(s);
@@ -90,7 +108,7 @@ public class SimpleExampleActivity extends AppCompatActivity {
                     () -> {
                         stringSubscriber.onComplete();
                     });
-        }
+
     }
 
 }
