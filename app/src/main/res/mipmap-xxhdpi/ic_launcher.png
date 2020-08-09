@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e7c83967-0856-4fa8-ab84-bdddfd34c222" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gureevinc/mvp_androidapplication/registration/RegistrationActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+              <folding>
+                <element signature="e#1062#1063#0" expanded="true" />
+                <element signature="e#1086#1087#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gureevinc/mvp_androidapplication/registration/RegistrationContract.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gureevinc/mvp_androidapplication/registration/RegistrationPresenter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Singleton" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_about_user.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_registration.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gureevinc/mvp_androidapplication/data/db/DbTable.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gureevinc/mvp_androidapplication/data/model/User.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gureevinc/mvp_androidapplication/data/db/DbHelper.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gureevinc/mvp_androidapplication/data/DbHelper.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gureevinc/mvp_androidapplication/data/User.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gureevinc/mvp_androidapplication/MainContract.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gureevinc/mvp_androidapplication/LoginContract.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gureevinc/mvp_androidapplication/about/AboutUserActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gureevinc/mvp_androidapplication/Repository.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gureevinc/mvp_androidapplication/_data/DbHelper.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gureevinc/mvp_androidapplication/about/AboutUserContract.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gureevinc/mvp_androidapplication/registration/RegistrationActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gureevinc/mvp_androidapplication/login/LoginContract.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gureevinc/mvp_androidapplication/login/LoginPresenter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gureevinc/mvp_androidapplication/login/LoginActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gureevinc/mvp_androidapplication/registration/RegistrationPresenter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gureevinc/mvp_androidapplication/registration/RegistrationContract.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="615" />
+    <option name="y" value="3" />
+    <option name="width" value="814" />
+    <option name="height" value="867" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="MVP_AndroidApplication" type=

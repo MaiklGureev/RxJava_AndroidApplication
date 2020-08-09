@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">RxJava_AndroidApplication</string>
+    <string name="button1">Simple example</string>
+    <string name="button2">Operation Map</string>
+    <string name="button3">Operation From</string>
+    <string name="button4">**************</string>
+    <string name="button5">**************</string>
+    <string name="button6">**************</string>
+    <string name="button7">**************</string>
+    <string name="button8">**************</string>
+    <string name="button9">**************</string>
+    <string name="button10">**************</string>
+    <string name="button11">**************</string>
+</resources>
